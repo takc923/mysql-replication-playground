@@ -10,6 +10,7 @@ Vagrant::Config.run do |config|
       node_config.vm.network :hostonly, "192.168.2.#{10 + node_num}"
       node_config.vm.provision :chef_solo do |chef|
         chef.cookbooks_path = "cookbooks"
+        chef.add_recipe("apt")
         chef.add_recipe("mysql::server")
         chef.roles_path = "roles"
         chef.add_role(node_num == 1 ? 'master' : 'slave')
