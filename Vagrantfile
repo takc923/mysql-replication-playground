@@ -20,7 +20,8 @@ Vagrant::Config.run do |config|
               :"server-id" => node_num,
              },
             :server_root_password => "",
-            :server_repl_password => "repl_pw"
+            :server_repl_password => "repl_pw", 
+            :server_debian_password => ""
           }
         }
       end
