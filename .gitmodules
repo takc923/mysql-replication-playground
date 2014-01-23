@@ -7,3 +7,6 @@
 [submodule "cookbooks/openssl"]
 	path = cookbooks/openssl
 	url = git@github.com:opscode-cookbooks/openssl.git
+[submodule "cookbooks/build-essential"]
+	path = cookbooks/build-essential
+	url = git@github.com:opscode-cookbooks/build-essential.git
